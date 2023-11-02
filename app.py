@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask.helpers import send_from_directory
 from flask_cors import CORS, cross_origin
 import sqlite3
 
@@ -17,7 +18,7 @@ def replace_unicode_hyphen_with_regular_hyphen(data):
 @app.route('/')
 @cross_origin()
 def serve_react_app():
-    return app.send_static_file(app.static_folder, 'index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/name', methods=['GET'])
 @cross_origin()
