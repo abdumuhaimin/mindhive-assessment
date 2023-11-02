@@ -16,7 +16,7 @@ const App = () => {
   })
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/lonlat')
+    fetch('/lonlat')
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
@@ -25,7 +25,7 @@ const App = () => {
     .catch((err) => {
       console.error(err.message);
     });
-    fetch('http://127.0.0.1:5000/name')
+    fetch('/name')
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
@@ -34,7 +34,7 @@ const App = () => {
     .catch((err) => {
       console.error(err.message);
     });
-    fetch('http://127.0.0.1:5000/address')
+    fetch('/address')
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
