@@ -28,6 +28,9 @@ Closing phase includes deployment to Heroku, writing documentations and readme (
 
 **Server:** Flask, SQLite
 
+## Prerequisites
+Python 3.10 and above
+Node.js v18.1 and above
 
 ## Installation
 
