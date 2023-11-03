@@ -51,7 +51,7 @@ To run the development server
 
 ```bash
 cd front-end
-npm run
+npm start
 ```
 
 Make sure to run the server too!
